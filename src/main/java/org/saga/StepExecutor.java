@@ -1,6 +1,6 @@
 package org.saga;
 
-public interface SagaStepExecutor<AG extends SagaAggregator, A extends SagaEvent<?>> {
+public interface StepExecutor<AG extends SagaAggregator, A extends SagaEvent<?>> {
     A onNext(A lastEvent, AG aggregator);
 
     default A onNextRever(A lastEvent, AG aggregator) {

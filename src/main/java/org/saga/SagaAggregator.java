@@ -1,5 +1,5 @@
-package org.example.stacksagakafka.saga;
+package org.saga;
 
-public abstract class SagaAggregator {
+public class SagaAggregator {
 
 }
